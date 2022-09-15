@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investing</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/intlTelInput.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+   
+<header class="header">
+    <div class="container-lg">
+    <nav class="navbar navbar-expand-md  navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo"></a>
+          <a href="#" class="nav-button mobile">Войти</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Торговля</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Аналитика</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Контакты</a>
+              </li>
+            </ul>
+
+        </div>
+        <a href="#" class="nav-button">Войти</a>
+        </div>
+      </nav>
+
+     <div class="header-block">
+        <h1 class="header-text">
+            Выведите свои инвестиции
+    <br> на новый уровень
+          </h1>
+          <a href="#" class="nav-button header-button">Открыть счет</a>
+     </div>
+</header>
+<div class="header-background"></div>
+</div>
+<section class="benefits">
+  <div class="container-lg">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="benefits-card">
+                <img src="img/icon1.png" alt="icon" class="benefits-card--icon">
+                <h3 class="benefits-card--heading">
+                    Самые низкие цены
+                </h3>
+                <p class="benefits-card--text">
+                    Наша прозрачная система низких комиссий и ставки финансирования позволяют максимально снизить затраты и увеличить доход.
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="benefits-card">
+                <img src="img/icon2.png" alt="icon" class="benefits-card--icon">
+                <h3 class="benefits-card--heading">
+                    Глобальный доступ
+                </h3>
+                <p class="benefits-card--text">
+                    Инвестируйте в акции, опционы, фьючерсы, иностранные валюты, облигации и фонды по всему миру с единого счета.
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="benefits-card">
+                <img src="img/icon1.png" alt="icon" class="benefits-card--icon">
+                <h3 class="benefits-card--heading">
+                    Ведущие технологии
+                </h3>
+                <p class="benefits-card--text">
+                    Мощные технологии IBKR позволяют оптимизировать скорость и эффективность трейдинга и проводить комплексный анализ портфеля.
+                </p>
+            </div>
+        </div>
+     
+    </div>
+  </div>
+</section>
+  
+
+    <script src="js/jQuery3.6.1.js"></script>
+    <script src="js/intlTelInput.min.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        var input = document.querySelector("#phone");
+        window.intlTelInput(input, {
+         initialCountry: "ca",
+         preferredCountries: ["us", "ca"]
+        });
+      </script>
+</body>
+</html>
