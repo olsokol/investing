@@ -44,7 +44,8 @@ html {
   font-style: normal;
   font-weight: 500;
   font-size: 1.6rem;
-  line-height: 1.9rem; }
+  line-height: 1.9rem;
+  padding-top: 3rem; }
 
 .navbar-nav {
   margin-left: auto;
@@ -93,7 +94,7 @@ html {
 
 .header {
   margin-bottom: 14rem;
-  background: url("../img/main.png") center/cover no-repeat, linear-gradient(to bottom right, #03004C, #34036C);
+  background: url("../img/main.webp") center/cover no-repeat, linear-gradient(to bottom right, #03004C, #34036C);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 10% 80%, 0 60%);
   clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 10% 80%, 0 60%);
   height: 100vh; }
@@ -117,39 +118,134 @@ html {
         transform: translateY(-50%);
         margin-top: 0; } }
   .header-background {
-    height: 180vh;
+    height: 170vh;
     width: 100%;
     background: #F8F8F8;
     position: absolute;
     top: 0;
     z-index: -1;
-    clip-path: polygon(0 0, 100% 0, 100% 70%, 80% 91%, 31% 100%, 21% 86%, 0 60%); }
+    clip-path: polygon(0 0, 100% 0, 100% 67%, 80% 91%, 31% 100%, 21% 86%, 0 60%); }
 
-.benefits-card {
-  background: #FFFFFF;
-  box-shadow: 0 1.4rem 6.4rem rgba(229, 229, 229, 0.5);
-  border-radius: 20px;
-  padding: 2rem 3rem;
-  height: 100%;
-  margin-bottom: 3rem; }
-  @media (max-width: 768px) {
-    .benefits-card {
-      height: auto; } }
-  .benefits-card--icon {
-    height: 4.6rem; }
-  .benefits-card--heading {
-    margin-top: 3rem;
-    margin-bottom: 2rem;
+.benefits {
+  margin-bottom: 25rem; }
+  .benefits-card {
+    background: #FFFFFF;
+    box-shadow: 0 1.4rem 6.4rem rgba(229, 229, 229, 0.5);
+    border-radius: 20px;
+    padding: 2rem 3rem;
+    height: 100%;
+    margin-bottom: 3rem; }
+    @media (max-width: 768px) {
+      .benefits-card {
+        height: auto; } }
+    .benefits-card--icon {
+      height: 4.6rem; }
+    .benefits-card--heading {
+      margin-top: 3rem;
+      margin-bottom: 2rem;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 2rem;
+      line-height: 2.4rem;
+      color: #000000; }
+    .benefits-card--text {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      color: #191919; }
+
+.prices {
+  margin-bottom: 18rem; }
+  .prices__heading {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
-    font-size: 2rem;
-    line-height: 2.4rem;
-    color: #000000; }
-  .benefits-card--text {
+    margin-bottom: 3.5rem;
+    font-size: 5rem;
+    line-height: 130.4%;
+    /* or 65px */
+    color: #09014C; }
+  .prices__list {
+    list-style: none; }
+    .prices__list-item {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.8rem;
+      line-height: 150%;
+      padding-left: 4.5rem;
+      /* or 27px */
+      position: relative;
+      color: #191919; }
+      .prices__list-item:not(:last-child) {
+        margin-bottom: 1.5rem; }
+      .prices__list-item::before {
+        content: "";
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 50%;
+        background: url("../img/checkmark.svg") center/1rem 1.236rem no-repeat #fff;
+        box-shadow: 0px 5px 15px rgba(229, 229, 229, 0.5);
+        position: absolute;
+        top: .5rem;
+        left: 0; }
+  .prices__img {
+    width: 100%; }
+
+.possibilities {
+  margin-bottom: 7rem; }
+  .possibilities__heading {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 5rem;
+    line-height: 130.4%;
+    /* or 65px */
+    margin-bottom: 3.5rem;
+    color: #09014C; }
+  .possibilities__text {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 1.6rem;
-    line-height: 2.4rem;
+    font-size: 1.8rem;
+    line-height: 150%;
+    /* or 27px */
+    margin-bottom: 6rem;
     color: #191919; }
+  .possibilities__card-num {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 7rem;
+    line-height: 8.5rem;
+    /* identical to box height */
+    color: #09014C; }
+  .possibilities__card .line {
+    height: 1px;
+    background-color: #000000; }
+    @media (max-width: 576px) {
+      .possibilities__card .line {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto; } }
+  .possibilities__card-text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    /* identical to box height */
+    color: #191919; }
+  @media (max-width: 576px) {
+    .possibilities__card {
+      text-align: center; } }
+  .possibilities__img {
+    width: 100%; }
+
+.potential {
+  padding-top: 24.5rem;
+  background: url("../img/img33.webp") center/cover no-repeat, linear-gradient(116.67deg, #03004C 3.5%, #1E0053 63.1%, #270056 97.87%);
+  clip-path: polygon(0 0, 100% 12%, 100% 77%, 80% 93%, 0 100%); }

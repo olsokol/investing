@@ -60,11 +60,13 @@ html {
     font-weight: 500;
     font-size: 1.6rem;
     line-height: 1.9rem;
+    padding-top: 3rem;
 }
 
 .navbar-nav {
     margin-left: auto;
     margin-right: 7rem;
+    
 
     @media (max-width:768px) {
         margin-top: 2rem;
@@ -127,7 +129,7 @@ html {
 
 .header {
     margin-bottom: 14rem;
-    background: url("../img/main.png") center/cover no-repeat, linear-gradient(to bottom right, #03004C,
+    background: url("../img/main.webp") center/cover no-repeat, linear-gradient(to bottom right, #03004C,
             #34036C);
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 10% 80%, 0 60%);
     clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 10% 80%, 0 60%);
@@ -163,18 +165,20 @@ html {
     }
 
     &-background {
-        height: 180vh;
+        height: 170vh;
         width: 100%;
         background: #F8F8F8;
         position: absolute;
         top: 0;
         z-index: -1;
-        clip-path: polygon(0 0, 100% 0, 100% 70%, 80% 91%, 31% 100%, 21% 86%, 0 60%);
+        clip-path: polygon(0 0, 100% 0, 100% 67%, 80% 91%, 31% 100%, 21% 86%, 0 60%);
 
     }
 }
 
 .benefits {
+    margin-bottom: 25rem;
+
     &-card {
         background: #FFFFFF;
         box-shadow: 0 1.4rem 6.4rem rgba(229, 229, 229, 0.5);
@@ -182,12 +186,13 @@ html {
         padding: 2rem 3rem;
         height: 100%;
         margin-bottom: 3rem;
-        @media (max-width:768px){
+
+        @media (max-width:768px) {
             height: auto;
         }
 
         &--icon {
-           
+
             height: 4.6rem;
         }
 
@@ -215,3 +220,139 @@ html {
         }
     }
 }
+
+.prices {
+    margin-bottom: 18rem;
+    &__heading {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        margin-bottom: 3.5rem;
+        font-size: 5rem;
+        line-height: 130.4%;
+        /* or 65px */
+
+
+        color: #09014C;
+
+    }
+
+    &__list {
+        list-style: none;
+
+        &-item {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.8rem;
+            line-height: 150%;
+            padding-left: 4.5rem;
+            /* or 27px */
+
+            position: relative;
+            color: #191919;
+
+            &:not(:last-child) {
+                margin-bottom: 1.5rem;
+            }
+
+            &::before {
+                content: "";
+                width: 2.5rem;
+                height: 2.5rem;
+                border-radius: 50%;
+                background: url("../img/checkmark.svg") center/1rem 1.236rem no-repeat #fff;
+                box-shadow: 0px 5px 15px rgba(229, 229, 229, 0.5);
+                position: absolute;
+                top: .5rem;
+                left: 0;
+
+            }
+        }
+    }
+
+    &__img {
+        width: 100%;
+    }
+}
+
+.possibilities {
+    margin-bottom: 7rem;
+    &__heading {
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 5rem;
+        line-height: 130.4%;
+        /* or 65px */
+margin-bottom: 3.5rem;
+
+        color: #09014C;
+    }
+
+    &__text {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 150%;
+        /* or 27px */
+margin-bottom: 6rem;
+
+        color: #191919;
+    }
+
+    &__card {
+        &-num {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 7rem;
+            line-height: 8.5rem;
+            /* identical to box height */
+
+
+            color: #09014C;
+
+        }
+
+        .line {
+            height: 1px;
+            background-color: #000000;
+
+            @media (max-width:576px) {
+                width: 50%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        &-text {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.8rem;
+            line-height: 2.2rem;
+            /* identical to box height */
+
+
+            color: #191919;
+
+        }
+        @media (max-width:576px){
+            text-align: center;
+        }
+    }
+
+    &__img {
+        width: 100%;
+    }
+}
+
+.potential {
+    padding-top: 24.5rem;
+    background: url("../img/img33.webp") center/cover no-repeat, linear-gradient(116.67deg, #03004C 3.5%, #1E0053 63.1%, #270056 97.87%);;
+    clip-path: polygon(0 0, 100% 12%, 100% 77%, 80% 93%, 0 100%);
+
+} 
