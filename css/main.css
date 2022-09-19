@@ -1,5 +1,7 @@
 @import url(inter/inter.css);
 @import url(roboto/roboto.css);
+
+
 * {
   padding: 0;
   margin: 0;
@@ -40,7 +42,7 @@ html {
   --bs-navbar-toggler-border-color: #fff; }
 
 .navbar {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 1.6rem;
@@ -58,7 +60,7 @@ html {
   background: #00DAEA;
   border-radius: 20px;
   padding: 1.5rem 4.5rem;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 1.6rem;
@@ -99,7 +101,7 @@ html {
   clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 10% 80%, 0 60%);
   height: 100vh; }
   .header-text {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 2.5rem;
@@ -143,14 +145,14 @@ html {
     .benefits-card--heading {
       margin-top: 3rem;
       margin-bottom: 2rem;
-      font-family: 'Inter';
+      font-family: 'Inter', sans-serif;
       font-style: normal;
       font-weight: 500;
       font-size: 2rem;
       line-height: 2.4rem;
       color: #000000; }
     .benefits-card--text {
-      font-family: 'Inter';
+      font-family: 'Inter', sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 1.6rem;
@@ -160,7 +162,7 @@ html {
 .prices {
   margin-bottom: 18rem; }
   .prices__heading {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 500;
     margin-bottom: 3.5rem;
@@ -171,7 +173,7 @@ html {
   .prices__list {
     list-style: none; }
     .prices__list-item {
-      font-family: 'Inter';
+      font-family: 'Inter', sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 1.8rem;
@@ -198,7 +200,7 @@ html {
 .possibilities {
   margin-bottom: 7rem; }
   .possibilities__heading {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 5rem;
@@ -207,7 +209,7 @@ html {
     margin-bottom: 3.5rem;
     color: #09014C; }
   .possibilities__text {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 1.8rem;
@@ -216,7 +218,7 @@ html {
     margin-bottom: 6rem;
     color: #191919; }
   .possibilities__card-num {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 7rem;
@@ -232,7 +234,7 @@ html {
         margin-left: auto;
         margin-right: auto; } }
   .possibilities__card-text {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 1.8rem;
@@ -246,6 +248,111 @@ html {
     width: 100%; }
 
 .potential {
+  position: relative;
   padding-top: 24.5rem;
-  background: url("../img/img33.webp") center/cover no-repeat, linear-gradient(116.67deg, #03004C 3.5%, #1E0053 63.1%, #270056 97.87%);
-  clip-path: polygon(0 0, 100% 12%, 100% 77%, 80% 93%, 0 100%); }
+  padding-bottom: 24.5rem;
+  background: linear-gradient(to bottom, #fff 50%, #F8F8F8 50%);
+  z-index: 2; }
+  .potential::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url("../img/img33.webp") center/cover no-repeat, linear-gradient(116.67deg, #03004C 3.5%, #1E0053 63.1%, #270056 97.87%);
+    clip-path: polygon(0 0, 100% 12%, 100% 77%, 80% 93%, 0 100%); }
+  .potential__heading {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 5rem;
+    line-height: 130.4%;
+    color: #FFFFFF;
+    margin-bottom: 8rem; }
+  .potential__card-heading {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 130%;
+    /* or 26px */
+    margin-bottom: 2.5rem;
+    color: #00DAEA; }
+  .potential__card-text {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 150%;
+    /* or 24px */
+    color: #FFFFFF; }
+  .potential .row-second {
+    margin-top: 7rem; }
+    @media (max-width: 576px) {
+      .potential .row-second {
+        margin-top: 0; } }
+  .potential-background {
+    height: 40vh;
+    z-index: -1;
+    bottom: -40vh;
+    width: 100%;
+    background: #F8F8F8;
+    clip-path: polygon(0 0, 100% 0, 100% 30%, 59% 100%, 0 43%);
+    position: absolute;
+    z-index: -1; }
+
+.innovations {
+  margin-top: 23.5rem;
+  position: relative;
+  z-index: 20; }
+  .innovations__heading {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 5rem;
+    line-height: 130.4%;
+    /* or 65px */
+    margin-bottom: 8rem;
+    color: #09014C; }
+  .innovations__card {
+    padding: 5rem 3rem;
+    background: #FFFFFF;
+    box-shadow: 0px 14px 64px rgba(229, 229, 229, 0.5);
+    border-radius: 20px; }
+    .innovations__card-heading {
+      font-family: 'Inter', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+      line-height: 130%;
+      /* or 23px */
+      color: #000000; }
+    .innovations__card-text {
+      font-family: 'Inter', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.4rem;
+      line-height: 140%;
+      /* or 20px */
+      margin-bottom: 3.6rem;
+      color: #191919; }
+    .innovations__card-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      font-family: 'Inter', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.4rem;
+      line-height: 130%;
+      /* or 18px */
+      text-decoration: none;
+      color: #00DAEA; }
+      .innovations__card-link:hover {
+        color: #00DAEA; }
